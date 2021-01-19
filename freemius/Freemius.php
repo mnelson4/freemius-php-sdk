@@ -20,7 +20,7 @@
 
     require_once(dirname(__FILE__) . '/FreemiusBase.php');
 
-    define('FS_SDK__USER_AGENT', 'fs-php-' . Freemius_Api_Base::VERSION);
+    define('FS_SDK__USER_AGENT', 'fs-php-' . Freemius_Api_Base2::VERSION);
 
     $curl_version = curl_version();
 
@@ -31,11 +31,11 @@
     if ( ! defined('FS_API__SANDBOX_ADDRESS'))
         define('FS_API__SANDBOX_ADDRESS', FS_API__PROTOCOL . '://sandbox-api.freemius.com');
 
-    if ( class_exists( 'Freemius_Api' ) ) {
+    if ( class_exists( 'Freemius_Api2' ) ) {
         return;
     }
 
-    class Freemius_Api extends Freemius_Api_Base
+    class Freemius_Api2 extends Freemius_Api_Base2
     {
         /**
          * Default options for curl.

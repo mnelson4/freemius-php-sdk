@@ -3,7 +3,7 @@
     * Thrown when an API call returns an exception.
     *
     */
-    class Freemius_Exception extends Exception
+    class Freemius_Exception2 extends Exception
     {
         protected $_result;
         protected $_type;

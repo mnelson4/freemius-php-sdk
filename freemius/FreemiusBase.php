@@ -43,11 +43,11 @@
 			require FS_SDK__EXCEPTIONS_PATH . $e . '.php';
 	}
 
-    if ( class_exists( 'Freemius_Api_Base' ) ) {
+    if ( class_exists( 'Freemius_Api_Base2' ) ) {
         return;
     }	
 
-	abstract class Freemius_Api_Base
+	abstract class Freemius_Api_Base2
 	{
 		const VERSION = '1.0.4';
 		const FORMAT = 'json';

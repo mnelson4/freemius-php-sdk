@@ -1,5 +1,5 @@
 <?php
-    class Freemius_OAuthException extends Freemius_Exception
+    class Freemius_OAuthException extends Freemius_Exception2
     {
         public function __construct($pResult)
         {
